@@ -1,0 +1,92 @@
+{% extends 'MyWebsites/base.html' %} <!-- наследуем шапку у base.html-->
+{% load static%}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<div class="main">
+     <div class="context_menu">
+        <h2 class="page_navigation">Навигация по сайту</h2>
+        <ul>
+            <li class = "nav"><a class="navigation_decoration" href="{% url 'about' %}">Про нас</a> </li>
+            <li class = "nav"><a class="navigation_decoration" href="{% url 'creating' %}">Создание темы</a></li>
+            <li class = "nav"><a class="navigation_decoration" href="{% url 'creating' %}">Об игре</a></li>
+            <li class = "nav"><a class="navigation_decoration" href="{% url 'creating' %}">Лучшие моды</a></li>
+            <li class = "nav"><a class="navigation_decoration" href="{% url 'creating' %}">Скайрим мемы</a></li>
+            <li class = "nav"><a class="navigation_decoration" href="{% url 'themes' %}">Темы сообщества</a></li>
+
+        </ul>
+    </div>
+    <div class="right_div">
+        <h1 class="main_page">Главные герои саги</h1>
+        <div class="experiment">
+            <ul id ="menu">
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/dovakin2.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Довакин</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/serana.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Cерана</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/mirak2.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Мирак</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/sedoborodiy2.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Седобородые</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/ulfrick.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Ульфрик</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/ciceron.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Цицерон</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/Alduin.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Алдуин</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/isgramor.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Исграмор</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/Parthurnax.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Партурнакс</h2>
+                    </div></a></li>
+                <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/mikeliar.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Майк лжец</h2>
+                    </div></a></li>
+                 <li><a class="heroes"  href="{% url 'billy' %}">
+                    <div class = "heroes_block">
+                        <img class="gif"  src="{% static 'MyWebsites/images/brin.png' %}"    alt ="Photo error">
+                        <h2 class="hero_name">Бриньольф</h2>
+                    </div></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="centerdiv">
+        <h1 class="main_page">Best Skyrim Tutorials</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cVrMhe3cXJg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uTUNOycD9uE?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eKoR1pJVmC4?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,238 @@
+body {
+    background-image: url(https://fullhdoboi.ru/wp-content/uploads/_ph/16/883536352.jpg) ;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.logo {
+    margin: 1%;
+    display: flex;
+    width: 98%;
+    background: black;
+    border: 4mm ridge rgba(170, 50, 220, .6);  /*обводит блок рамочкой*/
+}
+
+.img {
+    padding: 15px;
+    max-width: 100%;
+    box-sizing: border-box; /*Задает алгоритм вычисления ширины и высоты блока*/
+}
+
+.decoration {
+    width: 35%;
+    margin-top:  2%;
+    margin-left: 55%;
+}
+.decoration a:hover{
+    border-bottom:3px solid #fcac45;
+}
+
+.menu_decoration {
+    color: white;
+    margin-left: 2%;
+    font-family: "Comic Sans MS, Comic Sans, cursive";
+    font-size:1vw;
+    text-decoration: none
+}
+
+.main_page {
+    color: #E6E6E6;
+    text-decoration: none
+    font-family:"Montserrat, sans-serif";
+    font-size:1.7vw;
+    text-align:  center;
+}
+.right_div2 {
+   width:99%;
+   height:99%;
+   display: flex;
+}
+
+.page_navigation{
+    margin-left: 30px;
+    font-size:2vw;
+
+}
+.context_menu {
+
+
+    margin-bottom: 1%;
+    color: white;
+    margin-left: 5%;
+    width: 15%;
+    height:20%;
+
+}
+.navigation_decoration {
+    text-decoration: none;
+    color: white;
+    font-size:1vw;
+
+}
+
+.nav {
+    margin-bottom: 8%;
+}
+.main {
+    padding-top: 5%;
+    display: flex;
+
+
+}
+.right_div  {
+    position: relative;
+    left:5%;
+    bottom:70%;
+    width: 50%;
+    height: 40%;
+}
+
+.gif  {
+    padding: 10%;
+    width: 80%;
+    height: 100%;
+}
+
+.heroes{
+    width:100%;
+    height: 100%;
+    display: inline-block;
+}
+
+
+.width_block {
+    height: 100%;
+    width: 30%;
+    display: inline-block;
+
+}
+
+.heroes_block {
+
+    height: 80%;
+    width:100%;
+
+}
+.hero_name {
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: #E6E6E6;
+    font-family:"Montserrat, sans-serif";
+    text-align:  center;
+    font-size:1.2vw;  /*делаем размер текста адапивным под размер окна браузера*/
+
+
+}
+.centerdiv {
+    margin-left: 10%;
+    width: 30%;
+}
+.iframe {
+    margin-bottom: 5%;
+}
+
+.experiment {
+    width:100%;
+    height:100%;
+    position: relative;
+}
+
+
+
+ul#menu li{
+
+        display:inline-block; /* расположить пункты горизонтально */
+
+    }
+
+
+/*стили страниц героев*/
+.billy_page1 {
+    display:flex;
+}
+
+.main_hero_photo {
+    width: 90%;
+    height: 60%;
+    margin: 6%;
+    margin-top: 1%;
+}
+
+.billy1 {
+    display: flex;
+    margin:4% ;
+    width:20%;
+    height:30%;
+}
+
+.text1 {
+    margin-left: 5%;
+    color: white;
+
+}
+
+.billy2 {
+
+    margin:4% ;
+    margin-bottom:0;
+
+    width: 62%;
+}
+.text {
+    color: white;
+    font-family: "Helvetica, sans-serif";
+    font-size:1vw;
+
+}
+.billy_page2 {
+
+    margin:4% ;
+    margin-top:0;
+
+    width: 90%;
+}
+.mini_img {
+    margin-left:35%;
+
+}
+
+
+/*стили страницы тем*/
+.full {
+    background: black;
+    margin-left: auto;
+    margin-right: auto; /* центруем див */
+    width:50%;
+    outline: 2px solid #000; /* Чёрная рамка */
+    border: 3px solid #fff; /* Белая рамка */
+    border-radius: 10px;
+}
+.themes {
+  width: 100vw;
+  height: 100vh; /*растягиваем div на всю высоту и ширину экрана*/
+}
+
+.theme_title {
+    margin: 5%;
+    color: #DC143C;
+    text-align:  center;
+}
+
+.theme_task {
+    margin: 5%;
+    color: white;
+    text-align:  center;
+}
+
+.registration {
+  width: 100vw;
+  height: 100vh;
+}
+
+.small {
+    color:white;
+    width:20%;
+    height:20%;
+}

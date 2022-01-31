@@ -1,0 +1,15 @@
+{% extends 'MyWebsites/base.html' %} <!-- наследуем шапку у base.html-->
+
+{% block title %}
+Создайте новую тему
+{% endblock %}
+{% block content %}
+    <h4> Создайте вашу тему </h4>
+    <form method="post">  <!-- cоздаем форму для создания темы и задаем спосомб передачи-->
+        {% csrf_token %} <!-- cоздаем csrf token для рабоыт формы , без него работать не будет-->
+        {{ form.title }} <!-- вывод поля тайтл из словаря форм на страницу-->
+        {{ form.task }}
+    <button type="submit" class="btn btn-success">Сохранить</button> <!-- cоздаем кнопку для сохранения-->
+        <span>{{ error }}</span> <!--выводим сообщение об некорректности если оно есть-->
+    </form>
+{% endblock %}

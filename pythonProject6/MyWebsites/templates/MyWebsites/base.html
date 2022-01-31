@@ -1,0 +1,32 @@
+{% load static %} <!-- подключаем папку статик с цсс ффйлами-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"> <!-- здаем метатег вьюпорт , который ограничи ширину сужения экрана при уменьшении размеров экрана-->
+    <title>{% block title%}{% endblock %}></title>
+    <link rel="stylesheet" href="{% static 'MyWebsites/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="{% url 'home' %}"><img class="img" src="https://i1.sndcdn.com/artworks-000432727008-jjnlei-t500x500.jpg" height="90" width="90"  alt ="Photo error"></a>
+            <nav class="decoration">
+                <a class="menu_decoration" href="{% url 'home' %}">Главная</a>
+                <a class="menu_decoration" href="{% url 'about' %}">Про нас</a>
+                <a class="menu_decoration" href="{% url 'creating' %}">Создание темы</a>
+                <a class="menu_decoration" href="{% url 'login' %}">Авторизация</a>
+                <a class="menu_decoration" href="{% url 'registration' %}">Регистрация {{request.user}}</a>  <!--метод реквест юзер показывает есть ли сейчас авторизированный пользователь-->
+
+            </nav>
+        </div>
+
+
+    </header>
+
+    {% block content%}
+    {% endblock %}
+
+
+</body>
+</html>

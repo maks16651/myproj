@@ -1,0 +1,20 @@
+{% extends 'MyWebsites/base.html' %} <!-- наследуем шапку у base.html-->
+
+{% block title %}
+{{ title }} <!-- сюда передаемзначение тайтл из вью-->
+{% endblock %}
+{% block content %}
+    <div class="themes">
+        <h4 class="main_page" >ТЕМЫ СООБЩЕСТВА</h4>
+        {% if tasks %}  <!-- вывод тем на экран выполняетсят олько если эти темы есть-->
+            {% for element in tasks %}  <!-- создаем цикл ор для работы с каждым таском-->
+                <div class= "full"> <!-- задаем стиль и цвет надписям-->
+                    <h1 class="theme_title">{{ element.title }}</h1> <!-- выводим значение тайтл для каждого элемента списка таскс-->
+                    <h3 class="theme_task">{{ element.task }}</h3> <!-- выводим значение таск для каждого элемента списка таскс-->
+            </div>
+            {% endfor %}
+        {% else %} <!-- если нет выводитсья следующий текст-->
+        <p>Список тем пуст!</p>
+        {% endif %}
+    </div>
+{% endblock %}
